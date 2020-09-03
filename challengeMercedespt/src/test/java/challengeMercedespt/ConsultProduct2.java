@@ -8,16 +8,15 @@
 //---------------------------------------------------------------------------------------------------------------
 // -Testing Browser:
 //
-// -Firefox 78.0.2 (64-bit)
-// -Driver: geckodriver-master
+// -Google Chrome 84.0.4147.235 (64-bit)
+// -Driver: chromedriver_win64
 //---------------------------------------------------------------------------------------------------------------
 // -Project: challengeMercedespt
 // -Version: 0.1
 //---------------------------------------------------------------------------------------------------------------
 
-//1 - Packages
-
 package challengeMercedespt;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import java.util.NoSuchElementException;
@@ -49,7 +48,7 @@ import cucumber.api.java.en.When;
 
 //3 - Classes
 
-public class ConsultProduct {
+public class ConsultProduct2 {
 	//void CookieRead() {
 	//}
 	// 3.1 - Attributes
@@ -64,8 +63,8 @@ public class ConsultProduct {
 		
 		url ="https://shop.mercedes-benz.com/en-gb/collection/";
 		//url ="https://iterasys.com.br/plataforma/home/index.php?action=initial";
-		System.setProperty("webdriver.gecko.driver", "D:\\eclipse\\challenge_MG_QA\\drivers\\firefox\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\eclipse\\challenge_MG_QA\\drivers\\chrome\\chromedriver.exe");
+		driver = new ChromeDriver();
 		//driver.manage().window().maximize();
 		//driver.manage().deleteAllCookies();
 		//Thread.sleep(2000);
@@ -138,7 +137,7 @@ public class ConsultProduct {
 
 	@When("^i select the color \"([^\"]*)\" for my Cabriolet$")
 	public void i_select_the_color_for_my_Cabriolet(String term9) throws Throwable {
-    // Select the color of the product 
+  // Select the color of the product 
 		//driver.findElement(By.cssSelector("div.pdp-buy-box-colors-item.pdp-buy-box-colors-item-selected")).click();
 		//assertEquals("Black", driver.findElement(By.cssSelector("ng-binding")).getText());
 		System.out.println("Step 6 - select the color of the product");
@@ -347,4 +346,3 @@ public class ConsultProduct {
 
 
 }
-
