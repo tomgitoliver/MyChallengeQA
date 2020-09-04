@@ -105,6 +105,7 @@ public class ConsultProduct {
 		driver.findElement(By.id("searchTerm")).sendKeys(Keys.ENTER);
 		System.out.println("Step 2 - search a list of products with kind Cabriolet.");
     }
+	
 	@Then("^I visualize my Mercedes-Maybach S (\\d+) \"([^\"]*)\" with the biggest price$")
 	public void i_visualize_my_Mercedes_Maybach_S_with_the_biggest_price(int term31, String term32) throws Throwable {
 	    // I validade my search on the correct page navigation with my product name: Mercedes-Maybach S 650 Cabriolet.
