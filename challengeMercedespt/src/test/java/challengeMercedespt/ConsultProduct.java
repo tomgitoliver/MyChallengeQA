@@ -1,20 +1,3 @@
-//---------------------------------------------------------------------------------------------------------------
-// -Eclipse IDE for Java Developers
-// -Apache Maven 3.6.3
-// -Selenium-java-4-0-0-alpha-6
-// -Cucumber eclipse plugin 1.0.202005150629
-// -Cucumber-java-1.2.jar
-// -Cucumber-JUnit-1.2.5.jar
-//---------------------------------------------------------------------------------------------------------------
-// -Testing Browser:
-//
-// -Firefox 78.0.2 (64-bit)
-// -Driver: geckodriver-master
-//---------------------------------------------------------------------------------------------------------------
-// -Project: challengeMercedespt
-// -Version: 0.1
-//---------------------------------------------------------------------------------------------------------------
-
 //1 - Packages
 
 package challengeMercedespt;
@@ -64,7 +47,9 @@ public class ConsultProduct {
 		
 		url ="https://shop.mercedes-benz.com/en-gb/collection/";
 		//url ="https://iterasys.com.br/plataforma/home/index.php?action=initial";
+		//System.setProperty("webdriver.chrome.driver", "D:\\eclipse\\challenge_MG_QA\\drivers\\chrome\\chromedriver.exe");
 		System.setProperty("webdriver.gecko.driver", "D:\\eclipse\\challenge_MG_QA\\drivers\\firefox\\geckodriver.exe");
+		//driver = new ChromeDriver();
 		driver = new FirefoxDriver();
 		//driver.manage().window().maximize();
 		//driver.manage().deleteAllCookies();
