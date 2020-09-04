@@ -109,6 +109,7 @@ public class ConsultProduct {
 	    // I validade my search on the correct page navigation with my product name: Mercedes-Maybach S 650 Cabriolet.
 		Thread.sleep(3000);
 		Thread.sleep(3000);
+		Thread.sleep(3000);
 		assertEquals("Mercedes-Maybach S 650 "+term32, driver.findElement(By.xpath("//h3[contains(.,'Mercedes-Maybach S 650 Cabriolet')]")).getText());                                                                                   
 		System.out.println("Step 3 - visualize a list of products");
 	}
