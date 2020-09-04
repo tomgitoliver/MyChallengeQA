@@ -66,7 +66,7 @@ public class ConsultProduct {
 		//url ="https://iterasys.com.br/plataforma/home/index.php?action=initial";
 		System.setProperty("webdriver.gecko.driver", "D:\\eclipse\\challenge_MG_QA\\drivers\\firefox\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		//driver.manage().deleteAllCookies();
 		//Thread.sleep(2000);
 	}
@@ -111,9 +111,9 @@ public class ConsultProduct {
 	@Then("^I visualize my Mercedes-Maybach S (\\d+) \"([^\"]*)\" with the biggest price$")
 	public void i_visualize_my_Mercedes_Maybach_S_with_the_biggest_price(int term3, String term4) throws Throwable {
 	    // Validation of the page and navigation
-		Thread.sleep(3000);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,350)", "");
+		//Thread.sleep(3000);
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("window.scrollBy(0,350)", "");
 		Thread.sleep(3000);
 		assertEquals("Mercedes-Maybach S 650 "+term4, driver.findElement(By.xpath("//h3[contains(.,'Mercedes-Maybach S 650 Cabriolet')]")).getText());
 		//assertEquals(term3, driver.findElement(By.xpath("//h3[contains(.,'Mercedes-Maybach S 650 Cabriolet')]")).getText());
@@ -154,10 +154,10 @@ public class ConsultProduct {
 	@When("^i click on botton \"([^\"]*)\" to add my Cabriolet to basket$")
 	public void i_click_on_botton_to_add_my_Cabriolet_to_basket(String term12) throws Throwable {
 	    // Add the product to basket
-		Thread.sleep(3000);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,-350)", "");
 		//Thread.sleep(3000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+		Thread.sleep(3000);
 		//driver.findElement(By.cssSelector(".wb-e-btn-1:nth-child(2)")).click();
 		driver.findElement(By.xpath("//button[contains(.,' Add to basket')]")).click();
 		System.out.println("Step 8 - add the product to basket");
@@ -174,8 +174,8 @@ public class ConsultProduct {
 	public void i_click_on_botton(String term12) throws Throwable {
 	    // Go to Shopping Basket
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("window.scrollBy(0,-350)", "");
-		//Thread.sleep(3000);
+		js.executeScript("window.scrollBy(0,300)", "");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[contains(.,' Go to shopping basket')]")).click();
 		//driver.findElement(By.cssSelector("button.wb-e-btn-1.dcp-modal_cta.dcp-modal_cta--primary.ng-binding")).click();
 		System.out.println("Step 10 - go to shopping basket");
