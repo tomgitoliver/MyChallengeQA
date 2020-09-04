@@ -1,5 +1,6 @@
 #language EN
 #Sample Task 2: Automation Testing -  Selenium automation & Firefox Browser.
+
 @tag
 Feature: Consult a product in the Homepage of Mercedes-Benz with Firefox Browser.
 

@@ -71,6 +71,7 @@ public class ConsultProduct {
 		//driver.manage().deleteAllCookies();
 		//Thread.sleep(2000);
 	}
+	
 	@After// After the test
 	public void Finalizer() {
 		// Selenium will be running in background
