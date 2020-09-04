@@ -38,14 +38,15 @@ Here you can find my all information about the test case ( Automation with Selen
 
 01__Test_automation_preparation1.pdf
 
-
 -project\challengeMercedespt
 
 here you can find my project, selenium mit java on Eclipse IDE
 
--Project folder: 
+ChallengeQA_02_selenium
 
-challengeMercedespt
+-Project folder: ChallengeQA_02_selenium
+
+
 
 
 
