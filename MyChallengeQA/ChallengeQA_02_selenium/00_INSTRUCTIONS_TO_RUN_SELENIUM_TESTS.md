@@ -31,6 +31,12 @@ ConsultProduct.feature
 
 8-Copy the file pom.xml to the project root
 
+Then edit the file and insert:
+
+      <groupId>org.apache.maven</groupId>
+      <artifactId>your project name here</artifactId>
+
+
 9-Set into the file java the following line:
 
 ConsultProduct.java:
@@ -67,6 +73,11 @@ ConsultProduct2.feature
 7-Copy the full folder "drivers" to the project root
 
 8-Copy the file pom.xml to the project root
+
+Then edit the file and insert:
+
+      <groupId>org.apache.maven</groupId>
+      <artifactId>your project name here</artifactId>
 
 9-Set into the file java the following line:
 
